@@ -4,6 +4,7 @@ CLI entry point for the export stage.
 Usage:
     python run_exporter.py
     python run_exporter.py --raw-dir data/raw_pages --output data/corpus.jsonl
+    python run_exporter.py --raw-dir data/raw_pages data/raw_pages_www --output data/corpus_combined.jsonl
 """
 
 import argparse
@@ -20,8 +21,9 @@ def main() -> None:
     )
     parser.add_argument(
         "--raw-dir",
-        default=config.RAW_PAGES_DIR,
-        help=f"Directory containing raw crawled pages (default: {config.RAW_PAGES_DIR})",
+        nargs="+",
+        default=[config.RAW_PAGES_DIR],
+        help=f"One or more directories of raw crawled pages (default: {config.RAW_PAGES_DIR})",
     )
     parser.add_argument(
         "--output",
@@ -41,7 +43,7 @@ def main() -> None:
         stream=sys.stdout,
     )
 
-    written, skipped = export_to_jsonl(raw_dir=args.raw_dir, output_path=args.output)
+    written, skipped = export_to_jsonl(raw_dirs=args.raw_dir, output_path=args.output)
     print(f"\nDone. {written} records written, {skipped} skipped → '{args.output}'.")
 
 
