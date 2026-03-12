@@ -38,3 +38,11 @@ MIN_CONTENT_LENGTH = 100
 
 RAW_PAGES_DIR = "data/raw_pages"
 CORPUS_JSONL_PATH = "data/corpus.jsonl"
+CORPUS_COMBINED_PATH = "data/corpus_combined.jsonl"
+
+# --- Chunking ---
+CHUNK_SIZE_WORDS = 200
+CHUNK_OVERLAP_WORDS = 50
+# Documents with fewer words than this are kept whole (not chunked)
+CHUNK_MIN_DOC_WORDS = 200
+CHUNKS_JSONL_PATH = "data/chunks.jsonl"
