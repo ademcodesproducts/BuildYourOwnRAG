@@ -1,0 +1,17 @@
+# Virtual environment
+.venv/
+
+# Crawled data (large, not source code)
+data/
+
+# Logs
+*.log
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# OS
+.DS_Store
