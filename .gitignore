@@ -20,4 +20,6 @@ __pycache__/
 
 # OS
 .DS_Store
+models/
 drafts/
+predictions_dense_only.txt

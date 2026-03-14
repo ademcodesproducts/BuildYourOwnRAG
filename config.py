@@ -52,9 +52,9 @@ CORPUS_JSONL_PATH = "data/corpus.jsonl"
 CORPUS_COMBINED_PATH = "data/corpus_combined.jsonl"
 
 # --- Embedding (Dense Retrieval) ---
-EMBEDDING_MODEL = "BAAI/bge-base-en-v1.5"
+EMBEDDING_MODEL = "models/gte-modernbert-base-fp16"
 EMBEDDING_BATCH_SIZE = 32
-EMBEDDING_QUERY_PREFIX = "Represent this sentence for retrieving relevant passages: "
+EMBEDDING_QUERY_PREFIX = ""
 EMBEDDINGS_PATH = "data/embeddings.npy"
 FAISS_INDEX_PATH = "data/faiss_index.bin"
 DENSE_TOP_K = 5

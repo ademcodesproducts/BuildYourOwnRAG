@@ -42,8 +42,7 @@ def load_questions(path: str) -> list[str]:
 
 def write_predictions(path: str, predictions: list[str]):
     with open(path, "w", encoding="utf-8") as f:
-        for pred in predictions:
-            f.write(pred + "\n")
+        f.write("\n".join(predictions))
 
 
 def reciprocal_rank_fusion(
@@ -122,7 +121,11 @@ def main():
     t_gen = time.time()
 
     def generate_one(idx):
-        return idx, generate_answer(questions[idx], passages_all[idx])
+        try:
+            return idx, generate_answer(questions[idx], passages_all[idx])
+        except Exception as e:
+            logger.warning("Question %d failed: %s — using fallback", idx, e)
+            return idx, "Unknown"
 
     with ThreadPoolExecutor(max_workers=args.workers) as executor:
         futures = {executor.submit(generate_one, i): i for i in range(len(questions))}
