@@ -94,3 +94,21 @@ class DenseRetriever:
                 continue
             results.append(dict(self.chunks[idx], dense_score=float(score)))
         return results
+
+    def batch_retrieve_top_k(self, queries: list[str], k: int = config.DENSE_TOP_K) -> list[list[dict]]:
+        """Retrieve top-k chunks for a batch of queries at once."""
+        if self.index is None:
+            self.load_index()
+
+        query_vecs = self.embedder.encode_queries(queries)
+        scores_batch, indices_batch = self.index.search(query_vecs.astype(np.float32), k)
+
+        all_results = []
+        for scores, indices in zip(scores_batch, indices_batch):
+            results = []
+            for score, idx in zip(scores, indices):
+                if idx < 0:
+                    continue
+                results.append(dict(self.chunks[idx], dense_score=float(score)))
+            all_results.append(results)
+        return all_results

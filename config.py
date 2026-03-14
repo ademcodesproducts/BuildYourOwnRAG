@@ -45,7 +45,7 @@ BM25_TOP_K = 5
 # Generator
 LLM_MODEL = "meta-llama/llama-3.1-8b-instruct"
 OPENROUTER_API_KEY = ""  # set via environment variable OPENROUTER_API_KEY
-MAX_NEW_TOKENS = 64
+MAX_NEW_TOKENS = 32
 
 RAW_PAGES_DIR = "data/raw_pages"
 CORPUS_JSONL_PATH = "data/corpus.jsonl"

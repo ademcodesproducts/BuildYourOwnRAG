@@ -32,7 +32,12 @@ class Embedder:
         if self.model is not None:
             return
         logger.info("Loading embedding model: %s", self.model_name)
-        self.model = SentenceTransformer(self.model_name)
+        import torch
+        device = "cpu" if not torch.cuda.is_available() else "cuda"
+        # Use MPS on Mac for local dev, but Gradescope has no GPU so it'll be CPU
+        if hasattr(torch.backends, "mps") and torch.backends.mps.is_available():
+            device = "mps"
+        self.model = SentenceTransformer(self.model_name, device=device)
         logger.info("Model loaded — embedding dim: %d", self.model.get_sentence_embedding_dimension())
 
     def encode_passages(self, texts: list[str], show_progress: bool = True) -> np.ndarray:
