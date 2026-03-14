@@ -45,11 +45,19 @@ BM25_TOP_K = 5
 # Generator
 LLM_MODEL = "meta-llama/llama-3.1-8b-instruct"
 OPENROUTER_API_KEY = ""  # set via environment variable OPENROUTER_API_KEY
-MAX_NEW_TOKENS = 128
+MAX_NEW_TOKENS = 64
 
 RAW_PAGES_DIR = "data/raw_pages"
 CORPUS_JSONL_PATH = "data/corpus.jsonl"
 CORPUS_COMBINED_PATH = "data/corpus_combined.jsonl"
+
+# --- Embedding (Dense Retrieval) ---
+EMBEDDING_MODEL = "BAAI/bge-base-en-v1.5"
+EMBEDDING_BATCH_SIZE = 32
+EMBEDDING_QUERY_PREFIX = "Represent this sentence for retrieving relevant passages: "
+EMBEDDINGS_PATH = "data/embeddings.npy"
+FAISS_INDEX_PATH = "data/faiss_index.bin"
+DENSE_TOP_K = 5
 
 # --- Chunking ---
 CHUNK_SIZE_WORDS = 200
