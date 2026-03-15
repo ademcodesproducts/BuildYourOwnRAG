@@ -4,4 +4,4 @@
 
 set -euo pipefail
 
-python3 run_pipeline.py "$1" "$2" --retriever hybrid --top-k 5
+python3 run_pipeline.py "$1" "$2" --retriever hybrid --top-k 10

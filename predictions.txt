@@ -1,6 +1,6 @@
-Master of Science M.S. Doctor of Philosophy Ph.D. combined M.S./Ph.D.
+Master of Science (M.S.), Doctor of Philosophy (Ph.D.), combined M.S./Ph.D.
 Master of Engineering (M.Eng.)
-Unknown
+Saturday April 18 2026
 Dan Garcia
 Pioneers in Engineering
 8058
@@ -14,22 +14,22 @@ Tanush Talati
 Adwait Godbole
 2020
 3.3 or above
-2
-Unknown
+1
+5
 1,720
 19 percent
-71
+Over 100
 Three
 Daniel Klein and Anca Dragan
-Unknown
-Unknown
+Hany Farid
+February 16 2026
 National Aeronautics and Space Administration
-Eleven
+eleven
 Unknown
 ersohrops@erso.berkeley.edu
 2010
 Berkeley Artificial Intelligence Research
-EECS 206B
+CS 287
 3.0
 International House
 U.S. Citizens or permanent residents.
@@ -38,15 +38,15 @@ Jelani Nelson
 Joseph Gonzalez
 Josh Hug
 minilek@berkeley.edu
-Computer Science
-Rachel Zhang
+Computer Science from MIT.
 Unknown
-Michael Sun and Tiffany Sun
+Unknown
+Michael Sun
 grads-ee@berkeley.edu
 DialOp
 Collaborative Language Agents
-Unknown
-CS 162
+CS 61B
+CS162
 425 Sutardja Dai Hall
 Stanford University
 UC Berkeley
@@ -55,9 +55,9 @@ Monday 11-12, Friday 2-3
 Unknown
 No
 Unknown
-Unknown
-EECS 206A
-Cory 119
+50th anniversary of EECS
+EECS C206A
+Cory 540AB
 Unknown
 Formal Methods: Specification, Verification, and Synthesis
 passFail
@@ -65,25 +65,25 @@ Nancy Amato
 Alistair Sinclair
 OpenAI
 Manuel Blum
-1969
+Unknown
 over 25,000
 Christopher Hunn
 Yes
 Chisel: Constructing Hardware in a Scala Embedded Language
-AAAI/ACM SIGAI Dissertation Award
-Reasoning and Learning in Interactive Natural Language Systems
-Royal Society
+Honorable Mention for ACM Doctoral Dissertation Award
+Rethinking Data Use in Large Language Models
+Fellow of the Royal Society
 Cognitive Science
 501 Cory Hall
 Physics
 Clarence Linus Cory
-First tenured black professor in UC California system.
+First tenured black professor in the entire University of California
 IEEE 754 Floating Point Standard
 Redundant Arrays of Inexpensive Disks
-Computer-Aided Design Data
+SPICE
 NVIDIA
 1995
-Srinivas Devadas, DJ Seo, Dana Angluin, John Schulman
+Srinivas Devadas, DJ Seo, Dana Angluin, and John Schulman
 Unknown
 four-page reflection paper
 Judy Smithson
@@ -92,9 +92,9 @@ $20,000
 Corporate Access Program
 Unknown
 Ravi Ramamoorthi and Ren Ng
-Unknown
+Accountable Data Fusion and Privacy Preservation Techniques in Cyber-Physical Systems
 Unknown
 Neural module networks (NMNs)
 Unknown
-10 minutes
+10-minute walk
 Hearst and LeRoy Avenues
