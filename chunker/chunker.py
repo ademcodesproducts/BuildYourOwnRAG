@@ -72,12 +72,14 @@ def chunk_corpus(
             )
 
             for i, chunk in enumerate(chunks):
+                title = doc.get("title", "")
+                text_with_title = f"{title}\n{chunk}" if title else chunk
                 record = {
                     "chunk_id": f"{doc['id']}_{i}",
                     "doc_id": doc["id"],
                     "url": doc["url"],
-                    "title": doc["title"],
-                    "text": chunk,
+                    "title": title,
+                    "text": text_with_title,
                     "chunk_index": i,
                     "total_chunks": len(chunks),
                 }

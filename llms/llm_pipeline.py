@@ -12,7 +12,9 @@ SYSTEM_PROMPT = (
     "(ideally 1-5 words). Output ONLY the answer — no explanations, no punctuation "
     "unless it is part of the answer itself (e.g. an email address or quoted title). "
     "For yes/no questions, answer Yes or No. "
-    "For questions asking 'how long ago', compute from the current year 2026. "
+    "For questions asking 'how long ago', you MUST subtract the year from 2026 and "
+    "output the result as a number of years (e.g. if the year is 1985, output '41 years'). "
+    "Never output a raw year as the answer to a 'how long ago' question. "
     "Only say \"Unknown\" if the context contains no relevant information at all."
 )
 
