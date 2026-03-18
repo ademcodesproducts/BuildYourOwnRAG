@@ -9,7 +9,7 @@ from urllib.parse import urlparse, urlunparse, urlencode, parse_qsl
 # File extensions that are definitively not HTML — skip before any network request.
 NON_HTML_EXTENSIONS = {
     ".pdf", ".jpg", ".jpeg", ".png", ".gif", ".svg", ".webp", ".ico",
-    ".mp4", ".mp3", ".wav", ".ogg",
+    ".mp4", ".mp3", ".wav", ".ogg", ".wmv", ".avi", ".mov", ".mkv", ".flv",
     ".zip", ".tar", ".gz", ".bz2", ".7z", ".rar",
     ".docx", ".doc", ".pptx", ".ppt", ".xlsx", ".xls",
     ".css", ".js", ".json", ".xml",

@@ -16,10 +16,10 @@ ALLOWED_DOMAINS = {
 }
 
 # Hard cap on total pages crawled
-MAX_PAGES = 5000
+MAX_PAGES = 20000
 
 # Minimum seconds between requests to the same domain
-CRAWL_DELAY_SECONDS = 1.0
+CRAWL_DELAY_SECONDS = 0.0
 
 REQUEST_TIMEOUT_SECONDS = 10
 

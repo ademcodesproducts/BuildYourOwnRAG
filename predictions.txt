@@ -1,9 +1,9 @@
 Master of Science (M.S.), Doctor of Philosophy (Ph.D.), combined M.S./Ph.D.
 Master of Engineering (M.Eng.)
-Saturday April 18 2026
+Saturday, April 18, 2026
 Dan Garcia
 Pioneers in Engineering
-8058
+510-643-0805
 510-517-4041
 gjohnston@berkeley.edu
 721 Sutardja Dai Hall
@@ -12,19 +12,19 @@ gjohnston@berkeley.edu
 Jianzhi Wang
 Tanush Talati
 Adwait Godbole
-2020
-3.3
-2
-5
+Unknown
+3.3 or above
+1
+9
 1,720
 19 percent
-Over 100
-Three
+Unknown
+Unknown
 Daniel Klein and Anca Dragan
 Hany Farid
-February 16, 2026
+February 16 2026
 National Aeronautics and Space Administration
-Eleven
+eleven
 Unknown
 ersohrops@erso.berkeley.edu
 2010
@@ -33,12 +33,12 @@ CS 287
 3.0
 International House
 U.S. Citizens or permanent residents.
-3000 characters
+250 words
 Jelani Nelson
 Joseph Gonzalez
 Josh Hug
 minilek@berkeley.edu
-Computer Science
+Computer Science from MIT.
 minilek@berkeley.edu
 Unknown
 Michael Sun
@@ -51,13 +51,13 @@ CS162
 Stanford University
 UC Berkeley
 Carnegie Mellon University
-Monday 11-12, Friday 2-3
-ase-program@eecs.berkeley.edu
+Monday 11-12, 779 Soda; Friday 2- 3, 210 Wheeler
+Unknown
 No
-No deadline given.
-50 years of EECS
+Unknown
+50th anniversary of EECS
 EECS C206A
-Cory 119
+Cory 540AB
 Unknown
 Formal Methods: Specification, Verification, and Synthesis
 passFail
@@ -65,10 +65,10 @@ Nancy Amato
 Alistair Sinclair
 OpenAI
 Manuel Blum
-1969
+Unknown
 over 25,000
 Christopher Hunn
-Yes
+Yes.
 Chisel: Constructing Hardware in a Scala Embedded Language
 Honorable Mention for ACM Doctoral Dissertation Award
 Rethinking Data Use in Large Language Models
@@ -93,8 +93,8 @@ Corporate Access Program
 Unknown
 Ravi Ramamoorthi and Ren Ng
 Accountable Data Fusion and Privacy Preservation Techniques in Cyber-Physical Systems
-2018
+Unknown
 Neural module networks (NMNs)
 Unknown
-10 minutes
+10-minute walk
 Hearst and LeRoy Avenues

@@ -26,6 +26,7 @@ if _env_path.exists():
 import config
 from retriever.dense_retriever import DenseRetriever
 from retriever.bm25_retriever import BM25Retriever
+from retriever.fusion import reciprocal_rank_fusion
 from llms.llm_pipeline import generate_answer
 
 logging.basicConfig(
@@ -44,29 +45,6 @@ def write_predictions(path: str, predictions: list[str]):
     with open(path, "w", encoding="utf-8") as f:
         f.write("\n".join(predictions))
 
-
-def reciprocal_rank_fusion(
-    dense_results: list[dict],
-    bm25_results: list[dict],
-    k: int = 60,
-    top_k: int = 5,
-) -> list[dict]:
-    """Combine dense and BM25 results using reciprocal rank fusion."""
-    scores = {}
-    chunk_map = {}
-
-    for rank, chunk in enumerate(dense_results):
-        cid = chunk["chunk_id"]
-        scores[cid] = scores.get(cid, 0) + 1.0 / (k + rank + 1)
-        chunk_map[cid] = chunk
-
-    for rank, chunk in enumerate(bm25_results):
-        cid = chunk["chunk_id"]
-        scores[cid] = scores.get(cid, 0) + 1.0 / (k + rank + 1)
-        chunk_map[cid] = chunk
-
-    ranked = sorted(scores.items(), key=lambda x: x[1], reverse=True)[:top_k]
-    return [chunk_map[cid] for cid, _ in ranked]
 
 
 def main():
