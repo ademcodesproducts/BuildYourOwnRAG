@@ -20,3 +20,12 @@ predictions_dense_only.txt
 
 # Model weights
 models/
+
+# Raw crawl cache (too large for git)
+data/raw_pages/
+data/raw_pages_www/
+data/raw_pages.frontier
+
+# Error reports
+errors_report.csv
+errors_report.json

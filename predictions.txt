@@ -1,4 +1,4 @@
-Master of Science (M.S.), Doctor of Philosophy (Ph.D.), combined M.S./Ph.D.
+Master of Science (M.S.), Doctor of Philosophy (Ph.D.), and combined
 Master of Engineering (M.Eng.)
 Saturday, April 18, 2026
 Dan Garcia
@@ -9,20 +9,20 @@ gjohnston@berkeley.edu
 721 Sutardja Dai Hall
 510-643-5386
 257 Cory Hall
-Tanush Talati
+Jianzhi Wang
 Tanush Talati
 Adwait Godbole
-2020
 Unknown
-1
-9
+3.3
+2
+5
 1,720
 19%
 Over 100
 Three
 Daniel Klein and Anca Dragan
 Hany Farid
-February 16, 2026
+2026
 National Aeronautics and Space Administration
 eleven
 Unknown
@@ -39,7 +39,7 @@ Joseph Gonzalez
 Josh Hug
 minilek@berkeley.edu
 Computer Science
-Unknown
+minilek@berkeley.edu
 Unknown
 Michael Sun
 grads-ee@berkeley.edu
@@ -52,13 +52,13 @@ Stanford University
 UC Berkeley
 Carnegie Mellon University
 Monday 11-12, Friday 2-3
-Unknown
+gsicoordinators@eecs.berkeley.edu
 No
 No deadline given.
-50 years
+50 years of EECS
 EECS C206A
 Cory 119
-Unknown
+Valley Life Sciences 2050
 Formal Methods: Specification, Verification, and Synthesis
 passFail
 Nancy Amato
@@ -66,7 +66,7 @@ Alistair Sinclair
 OpenAI
 Manuel Blum
 1969
-over 25,000
+more than 25,000
 Christopher Hunn
 Yes
 Chisel: Constructing Hardware in a Scala Embedded Language
@@ -93,8 +93,8 @@ Corporate Access Program
 Unknown
 Ravi Ramamoorthi and Ren Ng
 Accountable Data Fusion and Privacy Preservation Techniques in Cyber-Physical Systems
-2018
+November 28 2018
 Neural module networks (NMNs)
 Unknown
 10 minutes
-Hearst and LeRoy Avenues
+Hearst and LeRoy Avenues.
