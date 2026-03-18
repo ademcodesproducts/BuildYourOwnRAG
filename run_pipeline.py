@@ -46,17 +46,31 @@ def write_predictions(path: str, predictions: list[str]):
         f.write("\n".join(predictions))
 
 
-
 def main():
-    parser = argparse.ArgumentParser(description="RAG pipeline: questions → predictions")
-    parser.add_argument("questions_path", help="Path to input questions file (one per line)")
-    parser.add_argument("predictions_path", help="Path to write predictions (one per line)")
-    parser.add_argument("--retriever", default="hybrid", choices=["dense", "hybrid"],
-                        help="Retrieval method (default: hybrid)")
-    parser.add_argument("--top-k", type=int, default=config.DENSE_TOP_K,
-                        help="Number of passages to retrieve per question")
-    parser.add_argument("--workers", type=int, default=10,
-                        help="Number of concurrent LLM workers")
+    parser = argparse.ArgumentParser(
+        description="RAG pipeline: questions → predictions"
+    )
+    parser.add_argument(
+        "questions_path", help="Path to input questions file (one per line)"
+    )
+    parser.add_argument(
+        "predictions_path", help="Path to write predictions (one per line)"
+    )
+    parser.add_argument(
+        "--retriever",
+        default="hybrid",
+        choices=["dense", "hybrid"],
+        help="Retrieval method (default: hybrid)",
+    )
+    parser.add_argument(
+        "--top-k",
+        type=int,
+        default=config.DENSE_TOP_K,
+        help="Number of passages to retrieve per question",
+    )
+    parser.add_argument(
+        "--workers", type=int, default=10, help="Number of concurrent LLM workers"
+    )
     args = parser.parse_args()
 
     questions = load_questions(args.questions_path)
@@ -87,7 +101,9 @@ def main():
         passages_all = []
         for i, question in enumerate(questions):
             bm25_results = bm25.retrieve_top_k(question, k=args.top_k)
-            fused = reciprocal_rank_fusion(dense_results_all[i], bm25_results, top_k=args.top_k)
+            fused = reciprocal_rank_fusion(
+                dense_results_all[i], bm25_results, top_k=args.top_k
+            )
             passages_all.append(fused)
         logger.info("Hybrid retrieval done in %.1fs", time.time() - t_bm25)
     else:
@@ -114,14 +130,15 @@ def main():
             done_count += 1
             if done_count % 20 == 0 or done_count == len(questions):
                 elapsed = time.time() - t_gen
-                logger.info("[%d/%d] generation %.1fs elapsed", done_count, len(questions), elapsed)
+                logger.info(
+                    "[%d/%d] generation %.1fs elapsed",
+                    done_count,
+                    len(questions),
+                    elapsed,
+                )
 
     write_predictions(args.predictions_path, predictions)
     logger.info("Wrote %d predictions to %s", len(predictions), args.predictions_path)
-
-    logger.info("=== Per-question predictions ===")
-    for i, (q, pred) in enumerate(zip(questions, predictions)):
-        logger.info("[%d] Q: %s | A: %s", i + 1, q, pred)
 
     total = time.time() - t0
     logger.info("Done in %.1fs (%.2fs/question avg)", total, total / len(questions))
