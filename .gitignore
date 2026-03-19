@@ -28,6 +28,7 @@ models/
 data/raw_pages/
 data/raw_pages_www/
 data/raw_pages.frontier
+data/corpus.jsonl
 
 # Error reports
 errors_report.csv
