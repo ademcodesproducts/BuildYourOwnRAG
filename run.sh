@@ -23,4 +23,4 @@ if not os.path.exists(config.FAISS_INDEX_PATH):
     print(f'Index built: {index.ntotal} vectors -> {config.FAISS_INDEX_PATH}')
 "
 
-python3 run_pipeline.py "$1" "$2" --retriever hybrid --top-k 10
+python3 run_pipeline.py "$1" "$2" --retriever hybrid --top-k 20
